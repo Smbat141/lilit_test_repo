@@ -1,0 +1,69 @@
+git fetch --all -> miangamic bolor branchery fetch en arvum  bolor remoteneric
+
+fetch aneluc heto el petq a pull anel, vortev erb fetch enq anum, inqy update chi anum mer local branchery, 
+u ete uzum enq update ani mer local branchery, petq a pull anenq
+
+ete fetch anenq, heto merge, kstananq git pull -i effecty
+
+Fetch exac contenty vonc vor merge chexac lini, u chi azdum mer local ashxatanqi vra,
+heto checkout enq linum u merge enq anum mer locali het
+
+
+git log filtering:
+-> karox enq filter anel yst qanaki: karanq limit anenq commitneri qanaky vor uzum enq cuyc ta
+git log -3
+cuyc kta verjin 3 commity
+harmar a erb mez verjin recent commitnern en hetaqrqir eli
+
+-> yst amsatvi: erb mez hetaqrqir a te konkret vor amsatvic araj kam heto exac commitnern en petq
+git log --after="27-01-2020"
+kam nuyny --before
+
+u amsatvi texy karanq grenq "1 week ago", kam "yesterday"
+
+--since u --until el karanq ogtagorcenq, voronq zut --after u --before i homanishner en hamapatasxanabar
+u --after --before miajamanak el karanq ogtagorcenq, vor mijakayqy cuyc tanq
+
+-> yst hexinaki: aysinqn vor henc konkret et user i arac commitnern en mez petq
+
+git log --author="Anna" :D
+inqy cuyc a talis en userneri commitnery voronc anuny Anna en parunakum, partadir hi lini exact match
+karox en regex ov el gres, bayc sovorakan string el karanq tanq
+
+git log --author="Anna\|Ashot", es el cuyc a talis kam Annayui kam Ashoti commtinery
+
+mailn el karanq grenq, ete maily anvan mej parunakum a
+
+hnaravor a mer workflow um baci authorneric nayev committerner linen
+et depqum filter kanenq git log --committer="Poghos"
+
+-> yst messagei:
+git log --grep="lalal"
+eli hi ashxatum exact matchov, ayl zut gtnum a en commitnery voronq vor parunakum en
+
+-> yst file-i: erb mez petq a haskanal te konkret file um inch popoxutyunner en katarvel
+git log -- lesson_8.py lesson_7.py
+
+-- es 2 gciky nra hamar a vor file path haskana voch te branch i anunner
+isk ete mtacum enq chi xarni u tenc naunnerov brancher chkan, karanq et  gciky chdnenq
+
+-> yst contenti:
+karox enq commit pntreluc grel -S u cuyc kta inchvr tox mer source codeic, aysinqn
+ git log -S"some name", es cuyc kta te es toxy erb a avelacel proejctin
+
+es harmar a debugging aneluc
+kara cuyc ta te erb a et toxy copy exel kam moved exel urish file
+
+-> yst rangei:
+harmr a erb uzum enq branch eri commitner gtnelu hamar
+kam 2 branchi mijev exac commitneri tarberutyun
+
+git log master..develop
+
+orinak es range y cuyc kta en commitnery voronq vor developeum kan bayc masterum chkan
+
+-> yst mergac kam chmergac commitnery
+git log --no-merges
+git log --merges
+
+
